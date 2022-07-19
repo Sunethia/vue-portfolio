@@ -1,15 +1,30 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>|
-    <router-link to="/resume">Resume</router-link> |
-    <router-link to="/projects">Projects</router-link>|
-    <router-link to="/Testimonials">Testimonials</router-link> |
-    <router-link to="/Contact">Contact</router-link>
+
+  <nav role="navigation" class="nav">
+    <div id="menuToggle">
+      <input type="checkbox" />
+      <span></span>
+      <span></span>
+      <span></span>
+      <ul id="menu">
+        <a
+          href="home"
+          class="nav-link router-link-exact-active router-link-active"
+          target="_self"
+          aria-current="page"
+          ><li>Home</li></a
+        >
+        <a href="about"><li>About</li></a>
+        <a href="resume"><li>Resume</li></a>
+        <a href="projects"><li>Projects</li></a>
+        <a class="nav-link" href="testimonials"><li>Testimonials</li></a>
+        <a href="contact"><li>Contact</li></a>
+      </ul>
+    </div>
   </nav>
 </template>
 
-<style>
+<style scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -18,16 +33,127 @@
   color: #2c3e50;
 }
 
-nav {
-  padding: 30px;
+.nav {
+  z-index: 1000;
+}
+.text {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  margin-top: 20%;
 }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
+#menuToggle {
+  color: white;
+  display: block;
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
 }
+.bck {
+  text-decoration: none;
+  position: sticky;
+  top: 0;
+  float: right;
+  margin-right: 50px;
+  color: white;
+}
+#menuToggle a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+#menuToggle a:hover {
+  color: rgb(2, 117, 162);
+}
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  -webkit-touch-callout: none;
+}
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #fefcfc;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+/*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu {
+  position: absolute;
+  width: 300px;
+  height: 100vh;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
 
-nav a.router-link-exact-active {
-  color: #42b983;
+  background: #000000;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
+#menu li {
+  padding: 10px 0;
+  font-size: 22px;
+}
+#menuToggle input:checked ~ ul {
+  transform: none;
+}
+/* End of Navbar */
 </style>

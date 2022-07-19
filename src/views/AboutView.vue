@@ -1,32 +1,70 @@
 <template>
   <div class="about">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <h1>
-            Sunethia Lawrence
-          </h1>
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <ol class="carousel-indicators">
+        <li
+          data-target="#carouselExampleIndicators"
+          data-slide-to="0"
+          class="active"
+        ></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            class="d-block w-50"
+            src="../assets/test1.jpg"
+            alt="First slide"
+          />
         </div>
-        <div class="col">
-          <img class="aboutimg" src="../assets/girl.jpg " />
+        <div class="carousel-item">
+          <img
+            class="d-block w-50"
+            src="../assets/test2.jpg"
+            alt="Second slide"
+          />
         </div>
-        <div class="col">
-          <h2>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam
-            recusandae tempore, ab ad cumque obcaecati voluptate officiis
-            accusamus error facere nam dolorem consectetur neque. Rerum eos
-            doloremque deserunt nisi molestias.
-          </h2>
+        <div class="carousel-item">
+          <img
+            class="d-block w-50"
+            src="../assets/test3.jpg"
+            alt="Third slide"
+          />
         </div>
       </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
   </div>
 </template>
 <style scoped>
-about {
+.about {
   height: 100vh;
   width: 100vw;
+  background-color: #333;
 }
+
 .aboutimg {
   height: 10rem;
   width: 10rem;
@@ -34,3 +72,4 @@ about {
   margin-top: 3rem;
 }
 </style>
+<script></script>

@@ -1,5 +1,5 @@
 <template>
-  <div id="landing">
+  <div class="home">
     <h1>Sunethia Lawrence</h1>
     <h2>Aspiring Web Developer</h2>
   </div>
@@ -16,11 +16,11 @@ export default {
   },
 };
 </script>
-<style scoped>
-#landing {
+<style>
+.home {
   width: 100vw;
   height: 100vh;
-  background-color: black;
+  background-color:#333;
   border: 1px solid black;
   display: flex;
   flex-direction: column;

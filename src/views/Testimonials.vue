@@ -143,4 +143,10 @@ body {
   font-style: italic;
   margin-top: 4px;
 }
+
+@media screen {
+  nav {
+    display: none;
+  }
+}
 </style>
