@@ -1,6 +1,6 @@
 <template>
   <div class="contact">
-    <h1>Contact</h1>
+    <h1 class="title">Contact</h1>
     <form action="https://formspree.io/f/xvolegyo" method="POST">
       <label>
         <textarea name="name" placeholder="Your name goes here..."></textarea>
@@ -19,7 +19,16 @@
         ></textarea>
       </label>
       <!-- your other form fields go here -->
-      <button type="submit">Send</button>
+      <button
+        type="submit"
+        style="background-color: #333;
+    border: none;
+    font-size: 5rem;
+    font-family:'Rampart One'
+}"
+      >
+        Send
+      </button>
     </form>
   </div>
 </template>
@@ -32,6 +41,9 @@ export default {};
   height: 100vh;
   background-color: #333;
 }
+.title {
+  margin-bottom: 10rem;
+}
 form {
   display: flex;
   align-items: center;
@@ -40,12 +52,12 @@ form {
   gap: 2rem;
 }
 textarea {
-  width: 20rem;
+  width: 30rem;
   height: 2rem;
   background-color: #333;
 }
 input {
-  width: 20rem;
+  width: 30em;
   height: 2rem;
   background-color: #333;
 }

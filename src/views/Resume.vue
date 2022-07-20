@@ -7,8 +7,8 @@
       <div class="leftbottom">
         <h3>Sunethia Lawrence</h3>
         <span>Aspiring Web Developer</span>
-        <h4 class="personal">PERSONAL INFO</h4>
-        <div class="peritem">
+        <h4 class="personal">PERSONAL INFO</h4><br>
+        <div class="peritem"><br>
           <p>Birth: 23.05.2000</p>
           <p>Country:South-Africa</p>
           <p>City: Cape Town</p>
@@ -35,11 +35,11 @@
             ><br />
           </P>
         </div>
-        <div class="icons">
+        <!-- <div class="icons">
           <div class="fb"></div>
           <div class="behance"></div>
           <div class="medium"></div>
-        </div>
+        </div> -->
       </div>
     </div>
     <div class="right">
@@ -190,6 +190,12 @@
 export default {};
 </script>
 <style>
+.resume {
+  background-color: #333;
+}
+div#app {
+  background-color: #333;
+}
 * {
   position: relative;
   /*    border: solid 0.1px; */
@@ -238,7 +244,7 @@ body {
 }
 .leftbottom {
   width: 306px;
-  height: 891px;
+  height: 818px;
   background-color: #333;
   font-family: HelveticaNeue-Condensed;
   color: #fff;

@@ -5,9 +5,7 @@
 export default {};
 </script>
 <style scoped>
-.Footer {
-  height: 20vh;
-}
+
 h1 {
   color: black;
 }

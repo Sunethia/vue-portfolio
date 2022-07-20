@@ -1,5 +1,4 @@
 <template>
-
   <nav role="navigation" class="nav">
     <div id="menuToggle">
       <input type="checkbox" />

@@ -1,60 +1,11 @@
 <template>
   <div class="about">
-    <div
-      id="carouselExampleIndicators"
-      class="carousel slide"
-      data-ride="carousel"
-    >
-      <ol class="carousel-indicators">
-        <li
-          data-target="#carouselExampleIndicators"
-          data-slide-to="0"
-          class="active"
-        ></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img
-            class="d-block w-50"
-            src="../assets/test1.jpg"
-            alt="First slide"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            class="d-block w-50"
-            src="../assets/test2.jpg"
-            alt="Second slide"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            class="d-block w-50"
-            src="../assets/test3.jpg"
-            alt="Third slide"
-          />
-        </div>
-      </div>
-      <a
-        class="carousel-control-prev"
-        href="#carouselExampleIndicators"
-        role="button"
-        data-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a
-        class="carousel-control-next"
-        href="#carouselExampleIndicators"
-        role="button"
-        data-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
+    <div class="container">
+      <h1>Ohh, Hi There!</h1>
+      <h2 class="description">
+        My name is Sunethia Haimly Lawrence.I am an Aspiring web developer,
+        located in South Africa, Cape town.
+      </h2>
     </div>
   </div>
 </template>
@@ -62,14 +13,12 @@
 .about {
   height: 100vh;
   width: 100vw;
-  background-color: #333;
+  background-image: "../assets/back-about.jpg";
 }
 
-.aboutimg {
-  height: 10rem;
-  width: 10rem;
-  margin-right: 35rem;
-  margin-top: 3rem;
+h1 {
+  font-family: Rampart One;
+  color: black;
 }
 </style>
 <script></script>
