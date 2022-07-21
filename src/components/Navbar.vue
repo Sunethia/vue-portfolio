@@ -6,18 +6,18 @@
       <span></span>
       <span></span>
       <ul id="menu">
-        <a
-          href="home"
+        <router-link
+          to="/"
           class="nav-link router-link-exact-active router-link-active"
           target="_self"
           aria-current="page"
-          ><li>Home</li></a
+          ><li>Home</li></router-link
         >
-        <a href="about"><li>About</li></a>
-        <a href="resume"><li>Resume</li></a>
-        <a href="projects"><li>Projects</li></a>
-        <a class="nav-link" href="testimonials"><li>Testimonials</li></a>
-        <a href="contact"><li>Contact</li></a>
+        <router-link to="/about"><li>About</li></router-link>
+        <router-link to="/resume"><li>Resume</li></router-link>
+        <router-link to="/projects"><li>Projects</li></router-link>
+        <router-link to="/testimonials"><li>Testimonials</li></router-link>
+        <router-link to="/contact"><li>Contact</li></router-link>
       </ul>
     </div>
   </nav>

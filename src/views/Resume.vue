@@ -7,8 +7,10 @@
       <div class="leftbottom">
         <h3>Sunethia Lawrence</h3>
         <span>Aspiring Web Developer</span>
-        <h4 class="personal">PERSONAL INFO</h4><br>
-        <div class="peritem"><br>
+        <h4 class="personal">PERSONAL INFO</h4>
+        <br />
+        <div class="peritem">
+          <br />
           <p>Birth: 23.05.2000</p>
           <p>Country:South-Africa</p>
           <p>City: Cape Town</p>
@@ -21,7 +23,7 @@
         </div>
         <h4 class="ed">EDUCATION</h4>
         <div class="institute">
-          <P
+          <p
             >High School : D.F Malan High School<br />
             <span style="font-weight: 20; font-size: 9px; letter-spacing: 1px">
               Year Matriculated: 2017 </span
@@ -33,7 +35,7 @@
             <span style="font-weight: 20; font-size: 9px; letter-spacing: 1px">
             </span
             ><br />
-          </P>
+          </p>
         </div>
         <!-- <div class="icons">
           <div class="fb"></div>
@@ -57,7 +59,7 @@
           development course, which taught me the basics of coding. I would
           describe myself as a diligent, hardworking person, with a optimistic
           view on life. I have a bubbly personality and I am always eager to
-          learn.Below is six of my greatest attributes.
+          learn.Below is five of my greatest attributes.
         </p>
       </div>
       <div class="ability">
@@ -107,22 +109,13 @@
           <!-- <div class="spot4"></div> -->
         </div>
         <div class="exitem">
-          <h4>Accordion Street Primary School</h4>
-          <p>Teachers Assistant</p>
-          <h4>Duration: 6 months</h4>
-          <p>Reference : D.Wallenstein</p>
-          <h4>Contact: 073 269 4245</h4>
-          <p>Accordion Street, Belhar</p>
-          <h4 style="margin-top: 29px">Greenchild Project</h4>
-          <p>Junior Web Developer</p>
-          <h4>Duration :3 months</h4>
-          <p>Reference: Edwin Petersen</p>
-          <h4 style="margin-top: 36px">S.A.P.S Parow</h4>
-          <p>Telephone operator</p>
-          <h4>Duration: 6 months</h4>
-          <p>Reference: Capt. Kevin Williams</p>
-
-          <p>Contact :021 953 8100</p>
+          <div v-for="w of work" :key="w.name">
+            <h4>{{ w.name }}</h4>
+            <p>{{ w.title }}</p>
+            <h4>Duration: {{ w.duration }}</h4>
+            <p>Reference : {{ w.reference.name }}</p>
+            <h4>Contact: {{ w.reference.number }}</h4>
+          </div>
         </div>
       </div>
       <div class="software">
@@ -187,9 +180,43 @@
   </div>
 </template>
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      work: [
+        {
+          name: "Accordion Street Primary School",
+          title: "Teachers Assistant",
+          duration: "6 months",
+          reference: {
+            name: " D.Wallenstein",
+            number: "073 269 4245",
+          },
+        },
+        {
+          name: "Greenchild Project",
+          title: "Web Specialist",
+          duration: "6 months",
+          reference: {
+            name: "Edwin Petersen",
+            number: "073 599 0312",
+          },
+        },
+        {
+          name: "S.A.P.S Parow",
+          title: "Telephone operator",
+          duration: "6 months",
+          reference: {
+            name: "Captain K.Williams",
+            number: "021 953 8100",
+          },
+        },
+      ],
+    };
+  },
+};
 </script>
-<style>
+<style scoped>
 .resume {
   background-color: #333;
 }

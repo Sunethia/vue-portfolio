@@ -11,16 +11,14 @@ import HelloWorld from "@/components/HelloWorld.vue";
 
 export default {
   name: "HomeView",
-  components: {
-    HelloWorld,
-  },
+ 
 };
 </script>
-<style>
+<style scoped>
 .home {
   width: 100vw;
   height: 100vh;
-  background-color:#333;
+  background-color: #333;
   border: 1px solid black;
   display: flex;
   flex-direction: column;

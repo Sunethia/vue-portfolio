@@ -1,6 +1,11 @@
 <template>
   <div class="contact">
-    <h1 class="title">Contact</h1>
+    <!-- <vue-aos animation-class="fadeIn animated">
+      <div>Hello</div>
+    </vue-aos>
+    <h1 class="title" v-vue-aos="{ animationClass: 'fadeIn animated' }">
+      Contact
+    </h1> -->
     <form action="https://formspree.io/f/xvolegyo" method="POST">
       <label>
         <textarea name="name" placeholder="Your name goes here..."></textarea>
@@ -21,11 +26,13 @@
       <!-- your other form fields go here -->
       <button
         type="submit"
-        style="background-color: #333;
-    border: none;
-    font-size: 5rem;
-    font-family:'Rampart One'
-}"
+        style="
+          background-color: #333;
+          border: none;
+          font-size: 5rem;
+          font-family: 'Rampart One';
+          color: white;
+        "
       >
         Send
       </button>
@@ -35,7 +42,7 @@
 <script>
 export default {};
 </script>
-<style>
+<style scoped>
 .contact {
   width: 100vw;
   height: 100vh;
@@ -43,6 +50,9 @@ export default {};
 }
 .title {
   margin-bottom: 10rem;
+  padding-top: 5rem;
+  font-family: Rampart One;
+  font-size: 5rem;
 }
 form {
   display: flex;

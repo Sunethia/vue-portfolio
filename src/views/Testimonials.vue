@@ -1,97 +1,58 @@
 <template>
   <div class="testimonials">
-    <div class="person">
+    <div class="person" v-for="t of testimonials" :key="t">
       <div class="container">
         <div class="container-inner">
-          <img class="circle" src="../assets/chanique.jpg" />
+          <img class="circle" :src="t.img" />
         </div>
       </div>
       <div class="divider"></div>
-      <div class="name">Chanique Mansoor</div>
-      <div class="title">
-        "Sunethia is a very energetic and bright<br />
-        person who lights up the room with her<br />
-        personality, she works very hard on succeeding and<br />
-        is passionate about the work she does.<br />
-        You'll never have a dull moment with her around."
-      </div>
+      <div class="name">{{ t.name }}</div>
+      <div class="title">" {{ t.text }}"</div>
     </div>
-    <div class="person">
-      <div class="container">
-        <div class="container-inner">
-          <img class="circle" src="../assets/Muneeb-min.jpg" />
-        </div>
-      </div>
-      <div class="divider"></div>
-      <div class="name">Muneeb Davids</div>
-      <div class="title">
-        "Sunethia is a hard working individual who loves what she does<br />
-        and strives in every and every aspect of it."
-      </div>
-    </div>
-    <div class="person">
-      <div class="container">
-        <div class="container-inner">
-          <img class="circle" src="../assets/Yasseen.jpg" />
-        </div>
-      </div>
-      <div class="divider"></div>
-      <div class="name">Yaaseen Davids</div>
-      <div class="title">
-        Sunethia is a person that is driven by<br />
-        success and she always puts in the hardwork.
-      </div>
-    </div>
-    <div class="person">
-      <div class="container">
-        <div class="container-inner">
-          <img class="circle" src="../assets/cammy.jpg" />
-        </div>
-      </div>
-      <div class="divider"></div>
-      <div class="name">Cameron Tamboer</div>
-      <div class="title">
-        Sunethia is a very hardworking person,<br />
-        who gives and does her best in all aspects.<br />
-        She also has a very patient and bubbly personality.<br />
-      </div>
-    </div>
-    <div class="person">
-      <div class="container">
-        <div class="container-inner">
-          <img class="circle" src="../assets/Jason.jpg" />
-        </div>
-      </div>
-      <div class="divider"></div>
-      <div class="name">Jason Wandrag</div>
-      <div class="title">
-        "Sunethia is a hard working individual who loves what she does<br />
-        and strives in every and every aspect of it."
-      </div>
-    </div>
-    <div class="person">
-      <div class="container">
-        <div class="container-inner">
-          <img class="circle" src="../assets/zach.jpg" />
-        </div>
-      </div>
-      <div class="divider"></div>
-      <div class="name">Zachary Williams</div>
-      <div class="title">
-        Sunethia Lawrence is a very<br />
-        competent individual, she strives higher<br />
-        than what she is capable of doing.<br />
-        Her passion for her work <br />preference is outstanding and she<br />
-        is a headstrong and smart working person."
-      </div>
-    </div>
-    
   </div>
 </template>
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      testimonials: [
+        {
+          img: "https://i.postimg.cc/QtS1Lh6g/cammy.jpg",
+          name: "Cameron Tamboer",
+          text: " Sunethia is a very hardworking person, who gives and does her best in all aspects.She also has a very patient and bubbly personality.",
+        },
+        {
+          img: "https://i.postimg.cc/X7rFhM9F/chanique.jpg",
+          name: "Chanique Mansoor",
+          text: "Sunethia is a very outspoken individual who strives in all aspects and loves taking on challenges. Wishing her all the best  with her future as a developer.",
+        },
+        {
+          img: "https://i.postimg.cc/d1J59TKB/jason.jpg",
+          name: "Jason Wandrag",
+          text: "I learn something new about Sunethia every day. When she is confident about the answer, she loves participating in class. I'm always happy to see her determined to do well in class. She has learned a lot of new concepts through the duration of the course. Her projects are always improving. If she practices her problem solving more, she will code even more confidently. I enjoy seeing the creative projects she makes, and I hope she practices her coding more! I think Sunethia is a great intern, so she will improve these skills quickly through hard work and studying.",
+        },
+        {
+          img: "https://i.postimg.cc/B6KZC5j1/Muneeb-min.jpg",
+          name: "Muneeb Davids",
+          text: "Sunethia is a hard working individual who loves what she does and strives in every and every aspect of it.",
+        },
+        {
+          img: "https://i.postimg.cc/c4RQ1w4h/Yasseen.jpg",
+          name: "Yaaseen Davids",
+          text: " Sunethia is a person that is driven by success and she always puts in the hardwork.",
+        },
+        {
+          img: "https://i.postimg.cc/Pfc6vWHk/zach.jpg",
+          name: "Zachary Williams",
+          text: " Sunethia Lawrence is a very competent individual, she strives higher than what she is capable of doing.Her passion for her work preference is outstanding and she is a headstrong and smart working person.",
+        },
+      ],
+    };
+  },
+};
 </script>
-<style>
+<style scoped>
 .testimonials {
   width: 100vw;
   display: flex;
@@ -101,7 +62,7 @@ export default {};
   background-color: #333;
   flex-wrap: wrap;
 }
-body {
+/* body {
   align-items: center;
   background-color: #f2f2f2;
   display: flex;
@@ -110,7 +71,7 @@ body {
   justify-content: center;
   height: 100vh;
   margin: 0;
-}
+} */
 .person {
   align-items: center;
   display: flex;

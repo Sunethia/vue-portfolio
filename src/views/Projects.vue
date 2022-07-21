@@ -2,129 +2,77 @@
   <div class="container">
     <div class="projects">
       <h1 class="title">Projects</h1>
-      <div class="card" style="width: 18rem">
-        <img
-          class="card-img-top"
-          src="../assets/code-back.jpg"
-          alt="Card image cap"
-        />
+      <div class="card" v-for="p of projects" :key="p">
+        <img class="card-img-top" :src="p.img" alt="Card image cap" />
         <div class="card-body">
-          <h5 class="card-title">My First Portfolio</h5>
+          <h5 class="card-title">{{ p.title }}</h5>
           <p class="card-text">
-            This is a portfolio that I created using HTML and CSS.
+            {{ p.text }}
           </p>
-          <a
-            href="https://github.com/Sunethia/My-Portfolio"
-            class="btn btn-primary"
-            >Github</a
-          >
-          <a
-            href="https://resilient-gelato-697c23.netlify.app"
-            class="btn btn-primary"
-            >Live</a
-          >
-        </div>
-      </div>
-      <div class="card" style="width: 18rem">
-        <img
-          class="card-img-top"
-          src="../assets/cal.jpg"
-          alt="Card image cap"
-        />
-        <div class="card-body">
-          <h5 class="card-title">Calculator</h5>
-          <p class="card-text">
-            This is a Calculator, that can be used on a phone or laptop.
-          </p>
-          <a
-            href="https://github.com/Sunethia/Calculator"
-            class="btn btn-primary"
-            >Github</a
-          >
-          <a
-            href="https://statuesque-beignet-53784f.netlify.app"
-            class="btn btn-primary"
-            >Live</a
-          >
-        </div>
-      </div>
-      <div class="card" style="width: 18rem">
-        <img
-          class="card-img-top"
-          src="../assets/bmi.jpg"
-          alt="Card image cap"
-        />
-        <div class="card-body">
-          <h5 class="card-title">BMI Calculator</h5>
-          <p class="card-text">
-            This is a calculator that calculates your body mass index and tells
-            you if you overweight or not.
-          </p>
-          <a
-            href="https://github.com/Sunethia/bmi_calculator"
-            class="btn btn-primary"
-            >Github</a
-          >
-          <a href="https://vocal-pie-c313a9.netlify.app" class="btn btn-primary"
-            >Live</a
-          >
-        </div>
-      </div>
-      <div class="card" style="width: 18rem">
-        <img
-          class="card-img-top"
-          src="../assets/todo.jpg"
-          alt="Card image cap"
-        />
-        <div class="card-body">
-          <h5 class="card-title">To do list</h5>
-          <p class="card-text">
-            To do list, where you can add and delete items.
-          </p>
-          <a
-            href="https://github.com/Sunethia/to-do-list"
-            class="btn btn-primary"
-            >Github</a
-          >
-          <a
-            href="https://enchanting-gaufre-33a4a3.netlify.app"
-            class="btn btn-primary"
-            >Live</a
-          >
-        </div>
-      </div>
-      <div class="card" style="width: 18rem">
-        <img
-          class="card-img-top"
-          src="../assets/houzez.jpg"
-          alt="Card image cap"
-        />
-        <div class="card-body">
-          <h5 class="card-title">Property Store</h5>
-          <p class="card-text">
-            This is a site where you can purchase apartments and houses,prices
-            and locations is included.
-          </p>
-          <a href="https://github.com/Sunethia/houzez" class="btn btn-primary"
-            >Github</a
-          >
-          <a
-            href="https://harmonious-chimera-1400b0.netlify.app"
-            class="btn btn-primary"
-            >Live</a
-          >
+          <a :href="p.git" class="btn btn-primary">Github</a>
+          <a :href="p.live" class="btn btn-primary">Live</a>
         </div>
       </div>
     </div>
   </div>
 </template>
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      projects: [
+        {
+          img: "https://i.postimg.cc/zGyk268Q/bmi.jpg",
+          title: "BMI calculator",
+          text: "BMI calculator, calculates your body mass index and tells you if you are the right weight for your age/height",
+          git: "https://github.com/Sunethia/bmi_calculator",
+          live: "https://vocal-pie-c313a9.netlify.app",
+        },
+        {
+          img: "https://i.postimg.cc/44rLkXFg/cal.jpg",
+          title: "Calculator",
+          text: "This is a functional calculator, which can be used on a phone or laptop",
+          git: "https://github.com/Sunethia/Calculator",
+          live: "https://statuesque-beignet-53784f.netlify.app",
+        },
+        {
+          img: "https://i.postimg.cc/662Kf5vJ/code.jpg",
+          title: "My First Portfolio",
+          text: "This is my first portfolio created with only HTML and CSS.",
+          git: "https://github.com/Sunethia/My-Portfolio",
+          live: "https://resilient-gelato-697c23.netlify.app",
+        },
+        {
+          img: "https://i.postimg.cc/7Ytg89LT/houzez.jpg",
+          title: "Properties",
+          text: "This website allows you to look at apartments or houses,which is either for rent or sale",
+          git: "https://github.com/Sunethia/houzez.git",
+          live: "https://harmonious-chimera-1400b0.netlify.app",
+        },
+        {
+          img: "https://i.postimg.cc/8c6VptSP/todo.jpg",
+          title: "To-do List",
+          text: "This is a to-do list, which allows you to add and delete items",
+          git: "https://github.com/Sunethia/to-do-list",
+          live: "https://enchanting-gaufre-33a4a3.netlify.app",
+        },
+        {
+          img: "https://i.postimg.cc/c43Ds6vm/restaurant.jpg",
+          title: "Restaurantly",
+          text: "This website is a website of restaurant where you are able to book a table at the restaurant.",
+          git: "https://github.com/Sunethia/Restaurant",
+          live: "https://velvety-hummingbird-230f0d.netlify.app",
+        },
+      ],
+    };
+  },
+};
 </script>
 <style>
-div.projects {
+.projects {
   background-color: #333;
   height: 100vh;
+  display: flex;
 }
 .title[margin-top: 2rem;] .card {
   border: 1px solid black;
@@ -135,14 +83,15 @@ div.projects {
   width: 13.7rem;
   height: 12rem;
 }
-div.card {
+.card {
   width: 16rem;
-    display: flex;
-    justify-content: space-between;
-    flex-direction:column;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333;
 }
-div.container {
+.container {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -155,5 +104,11 @@ div.container {
 }
 div#app {
   background-color: #333;
+}
+h5.card-title {
+  color: white;
+}
+p.card-text {
+  color: white;
 }
 </style>
