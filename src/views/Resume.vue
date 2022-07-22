@@ -1,5 +1,6 @@
 <template>
   <div class="resume">
+    <h1>Resume</h1>
     <div class="left">
       <div class="lefttop">
         <img src="../assets/sunethia.jpg" alt="" />
@@ -220,7 +221,12 @@ export default {
 .resume {
   background-color: #333;
 }
-div#app {
+h1 {
+  font-family: Rampart One;
+  color: white;
+  padding-bottom: 5rem;
+}
+#app {
   background-color: #333;
 }
 * {

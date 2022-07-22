@@ -1,11 +1,6 @@
 <template>
   <div class="contact">
-    <!-- <vue-aos animation-class="fadeIn animated">
-      <div>Hello</div>
-    </vue-aos>
-    <h1 class="title" v-vue-aos="{ animationClass: 'fadeIn animated' }">
-      Contact
-    </h1> -->
+    <h1>Contact</h1>
     <form action="https://formspree.io/f/xvolegyo" method="POST">
       <label>
         <textarea name="name" placeholder="Your name goes here..."></textarea>
@@ -47,6 +42,13 @@ export default {};
   width: 100vw;
   height: 100vh;
   background-color: #333;
+}
+h1 {
+  font-size: 5rem;
+  font-family: "Rampart One";
+  color: white;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
 }
 .title {
   margin-bottom: 10rem;

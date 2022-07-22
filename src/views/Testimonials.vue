@@ -1,5 +1,7 @@
 <template>
   <div class="testimonials">
+    <h1>Testimonials</h1>
+
     <div class="person" v-for="t of testimonials" :key="t">
       <div class="container">
         <div class="container-inner">
@@ -61,6 +63,14 @@ export default {
   flex-direction: row;
   background-color: #333;
   flex-wrap: wrap;
+}
+h1 {
+  background-color: #333;
+  font-family: "Rampart One";
+  font-size: 5rem;
+  padding-top: 3rem;
+  color: white;
+  padding-right: 10rem;
 }
 /* body {
   align-items: center;
@@ -161,6 +171,7 @@ export default {
   font-size: 14px;
   font-style: italic;
   margin-top: 4px;
+  margin-inline: 20%;
 }
 
 @media screen {

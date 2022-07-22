@@ -1,7 +1,8 @@
 <template>
   <div class="container">
+    <div class="title"></div>
     <div class="projects">
-      <h1 class="title">Projects</h1>
+      <!-- <h1>Projects</h1> -->
       <div class="card" v-for="p of projects" :key="p">
         <img class="card-img-top" :src="p.img" alt="Card image cap" />
         <div class="card-body">
@@ -71,8 +72,12 @@ export default {
 <style>
 .projects {
   background-color: #333;
-  height: 100vh;
   display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  margin-bottom: 10px;
+  padding: 20px;
 }
 .title[margin-top: 2rem;] .card {
   border: 1px solid black;
@@ -84,12 +89,20 @@ export default {
   height: 12rem;
 }
 .card {
-  width: 16rem;
+  width: 20rem;
+  height: 25rem;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
   background-color: #333;
+  box-shadow: 5px 5px 5px 5px cornflowerblue;
+  padding: 10px;
+}
+.card:hover {
+  background: cornflowerblue;
+  box-shadow: 5px 5px 5px 5px white;
+  color: white;
 }
 .container {
   display: flex;

@@ -11,15 +11,14 @@
         and regard myself as a diligent and <br />hardworking individual. My
         eagerness is one of my greatest attributes.
       </h2>
+   
     </div>
   </div>
 </template>
 <style scoped>
 .about {
-  width: 100%;
-  background-image: url(../assets/about.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  height:100vh;
+  background-color: #333;
 }
 
 h1 {
@@ -33,8 +32,10 @@ h2 {
   color: white;
   font-size: 1rem;
   display: flex;
+  align-items: center;
+  justify-content: center;
   padding-top: 8rem;
-  padding-left: 26rem;
+ 
 }
 </style>
 <script></script>
