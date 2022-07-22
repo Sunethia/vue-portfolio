@@ -108,70 +108,12 @@
           <!-- <div class="spot4"></div> -->
         </div>
         <div class="exitem">
-          <div v-for="w of work" :key="w.name">
+          <div class="it" v-for="w of work" :key="w.name">
             <h4>{{ w.name }}</h4>
             <p>{{ w.title }}</p>
             <h4>Duration: {{ w.duration }}</h4>
             <p>Reference : {{ w.reference.name }}</p>
             <h4>Contact: {{ w.reference.number }}</h4>
-          </div>
-        </div>
-      </div>
-      <div class="software">
-        <h4>SKILL</h4>
-        <hr
-          color="#375460"
-          size="2px;"
-          style="margin-top: 3px; margin-left: 26px; margin-right: 26px"
-        />
-        <div class="psbar">
-          HTML5
-          <div class="barchart1">
-            <div class="value1"></div>
-          </div>
-        </div>
-        <div class="aibar">
-          CSS3
-          <div class="barchart2">
-            <div class="value2"></div>
-          </div>
-        </div>
-        <div class="idbar">
-          Javascript
-          <div class="barchart3">
-            <div class="value3"></div>
-          </div>
-        </div>
-        <div class="lrbar">
-          VUE
-          <div class="barchart4">
-            <div class="value4"></div>
-          </div>
-        </div>
-      </div>
-      <div class="language">
-        <h4 style="margin-left: -11px">LANGUAGES</h4>
-        <hr
-          color="#375460"
-          size="2px;"
-          style="margin-top: 3px; margin-left: 16px; margin-right: 26px"
-        />
-        <div class="mandarin">
-          <p>English</p>
-          <div class="mabar"></div>
-          <div class="english">
-            <p>Afrikaans</p>
-            <div class="enbar"></div>
-          </div>
-          <div class="jpn">
-            <p>IsiXhosa(Basics)</p>
-            <div class="jpbar"></div>
-          </div>
-          <div class="lancube">
-            <div class="cube1"></div>
-            MAND
-            <div class="cube2">ENG</div>
-            <div class="cube3">JAP</div>
           </div>
         </div>
       </div>
@@ -216,26 +158,20 @@ export default {
 };
 </script>
 <style scoped>
-.resume {
-  background-color: #333;
-}
 h1 {
   font-family: Rampart One;
   color: white;
-  padding-bottom: 5rem;
 }
-#app {
+app {
   background-color: #333;
 }
 * {
   position: relative;
-  /*    border: solid 0.1px; */
-  vertical-align: middle;
 }
 
 html,
 body {
-  height: 1350px;
+  /* height: 1350px; */
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
@@ -243,7 +179,6 @@ body {
 
 .resume {
   width: 862px;
-  height: 1218px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 60px;
@@ -258,7 +193,6 @@ body {
 
 .left {
   width: 306px;
-  height: 1218px;
 }
 
 .lefttop {
@@ -275,7 +209,7 @@ body {
 }
 .leftbottom {
   width: 306px;
-  height: 818px;
+  height: 758px;
   background-color: #333;
   font-family: HelveticaNeue-Condensed;
   color: #fff;
@@ -424,7 +358,6 @@ body {
 
 .right {
   width: 556px;
-  height: 1218px;
   background-color: #333;
 }
 
@@ -449,6 +382,7 @@ body {
   box-sizing: border-box;
   left: 28px;
   margin-top: 2px;
+  margin-bottom: 10px;
 }
 
 .circle1,
@@ -570,8 +504,9 @@ body {
 }
 
 .experience {
-  height: 580px;
+  height: 400px;
   box-sizing: border-box;
+  margin-inline: 8%;
 }
 .experience h4 {
   color: white;
@@ -964,5 +899,20 @@ body {
   background-color: rgba(164, 185, 193, 0.45);
   left: 68px;
   top: -2px;
+}
+
+.it {
+  width: 280px;
+  margin: 2px;
+}
+/* media queries */
+
+@media (min-width: 300px) and (max-width: 850px) {
+  .profile p {
+    font-size: 16px;
+  }
+  .ability {
+    display: none;
+  }
 }
 </style>

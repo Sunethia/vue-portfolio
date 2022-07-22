@@ -1,8 +1,7 @@
 <template>
+  <h1>Projects</h1>
   <div class="container">
-    <div class="title"></div>
     <div class="projects">
-      <!-- <h1>Projects</h1> -->
       <div class="card" v-for="p of projects" :key="p">
         <img class="card-img-top" :src="p.img" alt="Card image cap" />
         <div class="card-body">
@@ -79,8 +78,15 @@ export default {
   margin-bottom: 10px;
   padding: 20px;
 }
-.title{margin-top: 2rem;}
- .card {
+h1 {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  color: white;
+  font-family: "Rampart One";
+  font-size: 5rem;
+}
+
+.card {
   border: 1px solid black;
   width: 4rem;
   height: 25rem;
@@ -124,5 +130,23 @@ h5.card-title {
 }
 p.card-text {
   color: white;
+}
+@media (min-width: 300px) and (max-width: 375px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  .card {
+    width: 280px;
+  }
+}
+@media (min-width: 300px) and (max-width: 375px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .card {
+    width: 240px;
+  }
 }
 </style>

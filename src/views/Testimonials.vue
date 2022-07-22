@@ -68,9 +68,10 @@ h1 {
   background-color: #333;
   font-family: "Rampart One";
   font-size: 5rem;
-  padding-top: 3rem;
+  padding-top: 1rem;
   color: white;
-  padding-right: 10rem;
+  padding-left: 10rem;
+  padding-right: 6rem;
 }
 /* body {
   align-items: center;
@@ -93,7 +94,7 @@ h1 {
 .container {
   border-radius: 50%;
   height: 312px;
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: white;
   transform: scale(0.48);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 400px;
@@ -177,6 +178,38 @@ h1 {
 @media screen {
   nav {
     display: none;
+  }
+}
+@media (min-width: 300px) and (max-width: 616px) {
+  h1 {
+    font-size: 4rem;
+  }
+  .person {
+    width: 400px;
+  }
+}
+@media (min-width: 300px) and (max-width: 520px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  .person {
+    width: 400px;
+  }
+}
+@media (min-width: 300px) and (max-width: 470px) {
+  h1 {
+    font-size: 3rem;
+  }
+  .person {
+    width: 400px;
+  }
+}
+@media (min-width: 300px) and (max-width: 413px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .person {
+    width: 300px;
   }
 }
 </style>
