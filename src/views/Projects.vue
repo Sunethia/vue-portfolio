@@ -79,7 +79,8 @@ export default {
   margin-bottom: 10px;
   padding: 20px;
 }
-.title[margin-top: 2rem;] .card {
+.title{margin-top: 2rem;}
+ .card {
   border: 1px solid black;
   width: 4rem;
   height: 25rem;

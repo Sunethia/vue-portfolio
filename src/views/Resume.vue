@@ -24,13 +24,11 @@
         </div>
         <h4 class="ed">EDUCATION</h4>
         <div class="institute">
-          <p
+          <p>
             >High School : D.F Malan High School<br />
             <span style="font-weight: 20; font-size: 9px; letter-spacing: 1px">
               Year Matriculated: 2017 </span
-            ><br />2018-2020
-            <hr color="#fff" size="0.5px" />
-            Icollege - IT (Technical Support)<br />
+            ><br />2018-2020 Icollege - IT (Technical Support)<br />
             I-Can Genesis Centre- (It Web Specialist/Engineer)
             <br />
             <span style="font-weight: 20; font-size: 9px; letter-spacing: 1px">
@@ -91,15 +89,15 @@
           style="margin-top: 3px; margin-left: 26px; margin-right: 26px"
         />
         <div class="tag1">
-          &nbsp&nbsp2022
+          2022
           <div class="tagtri1"></div>
         </div>
         <div class="tag2">
-          &nbsp&nbsp2021
+          2021
           <div class="tagtri2"></div>
         </div>
         <div class="tag3">
-          &nbsp&nbsp2020
+          2020
           <div class="tagtri3"></div>
         </div>
 
@@ -171,9 +169,9 @@
           </div>
           <div class="lancube">
             <div class="cube1"></div>
-            &nbspMAND
-            <div class="cube2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspENG</div>
-            <div class="cube3">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspJAP</div>
+            MAND
+            <div class="cube2">ENG</div>
+            <div class="cube3">JAP</div>
           </div>
         </div>
       </div>
