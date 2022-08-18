@@ -1,65 +1,50 @@
 <template>
-  <div class="resume">
-    <h1>Resume</h1>
-    <div class="left">
-      <div class="lefttop">
-        <img src="../assets/sunethia.jpg" alt="" />
+  <div class="container">
+    <div class="resume">
+      <div class="intro">
+        <h1>Sunethia Lawrence</h1>
+        <p>Aspiring Full Stack Developer</p>
       </div>
-      <div class="leftbottom">
-        <h3>Sunethia Lawrence</h3>
-        <span>Aspiring Web Developer</span>
-        <h4 class="personal">PERSONAL INFO</h4>
-        <br />
-        <div class="peritem">
+      <div class="left">
+        <div class="lefttop">
+          <img src="../assets/sunethia.jpg" alt="" />
+        </div>
+        <div class="leftbottom">
+          <h4 class="personal">PERSONAL INFO</h4>
           <br />
-          <p>Birth: 23.05.2000</p>
-          <p>Country:South-Africa</p>
-          <p>City: Cape Town</p>
-        </div>
-        <h4 class="contact">CONTACT</h4>
-        <div class="conitem">
-          <p>Phone :021 952 6731</p>
-          <p>Moblie :084 582 8653</p>
-          <p style="letter-spacing: 0.2px">Email: lawrencesunethia@gmail.com</p>
-        </div>
-        <h4 class="ed">EDUCATION</h4>
-        <div class="institute">
-          <p>
-            >High School : D.F Malan High School<br />
-            <span style="font-weight: 20; font-size: 9px; letter-spacing: 1px">
-              Year Matriculated: 2017 </span
-            ><br />2018-2020 Icollege - IT (Technical Support)<br />
-            I-Can Genesis Centre- (It Web Specialist/Engineer)
+          <div class="peritem">
             <br />
-            <span style="font-weight: 20; font-size: 9px; letter-spacing: 1px">
-            </span
-            ><br />
-          </p>
+            <p>Birth: 23.05.2000</p>
+            <p>Country:South-Africa</p>
+            <p>City: Cape Town</p>
+          </div>
+          <h4 class="contact">CONTACT</h4>
+          <div class="conitem">
+            <p>Phone :021 952 6731</p>
+            <p>Moblie :084 582 8653</p>
+            <p style="letter-spacing: 0.2px">
+              Email: lawrencesunethia@gmail.com
+            </p>
+          </div>
+          <h4 class="ed">EDUCATION</h4>
+          <div class="institute">
+            <p>
+              >High School : D.F Malan High School<br />
+              <span
+                style="font-weight: 20; font-size: 9px; letter-spacing: 1px"
+              >
+                Year Matriculated: 2017 </span
+              ><br />2018-2020 Icollege - IT (Technical Support)<br />
+              I-Can Genesis Centre- (It Web Specialist/Engineer)
+              <br />
+              <span
+                style="font-weight: 20; font-size: 9px; letter-spacing: 1px"
+              >
+              </span
+              ><br />
+            </p>
+          </div>
         </div>
-        <!-- <div class="icons">
-          <div class="fb"></div>
-          <div class="behance"></div>
-          <div class="medium"></div>
-        </div> -->
-      </div>
-    </div>
-    <div class="right">
-      <div class="profile">
-        <h4>PROFILE</h4>
-        <hr
-          color="#375460"
-          size="2px;"
-          style="margin-top: 3px; margin-left: 26px; margin-right: 26px"
-        />
-        <p>
-          Hi, I am Sunethia, an aspiring Web developer. I have done a few
-          courses in the IT field.In 2018 I did an IT technical support course
-          which helped me improve my time management skills.I also did a web
-          development course, which taught me the basics of coding. I would
-          describe myself as a diligent, hardworking person, with a optimistic
-          view on life. I have a bubbly personality and I am always eager to
-          learn.Below is five of my greatest attributes.
-        </p>
       </div>
       <div class="ability">
         <div class="circle1">
@@ -81,39 +66,59 @@
           </div>
         </div>
       </div>
-      <div class="experience">
-        <h4>WORK EXPERIENCE</h4>
-        <hr
-          color="#375460"
-          size="2px;"
-          style="margin-top: 3px; margin-left: 26px; margin-right: 26px"
-        />
-        <div class="tag1">
-          2022
-          <div class="tagtri1"></div>
-        </div>
-        <div class="tag2">
-          2021
-          <div class="tagtri2"></div>
-        </div>
-        <div class="tag3">
-          2020
-          <div class="tagtri3"></div>
+      <div class="right">
+        <div class="profile">
+          <h4>PROFILE</h4>
+          <hr
+            color="#375460"
+            size="2px;"
+            style="margin-top: 3px; margin-left: 26px; margin-right: 26px"
+          />
+          <p>
+            Hi, I am Sunethia, an aspiring Web developer. I have done a few
+            courses in the IT field.In 2018 I did an IT technical support course
+            which helped me improve my time management skills.I also did a web
+            development course, which taught me the basics of coding. I would
+            describe myself as a diligent, hardworking person, with a optimistic
+            view on life. I have a bubbly personality and I am always eager to
+            learn.Below is five of my greatest attributes.
+          </p>
         </div>
 
-        <div class="verline">
-          <div class="spot"></div>
-          <div class="spot2"></div>
-          <div class="spot3"></div>
-          <!-- <div class="spot4"></div> -->
-        </div>
-        <div class="exitem">
-          <div class="it" v-for="w of work" :key="w.name">
-            <h4>{{ w.name }}</h4>
-            <p>{{ w.title }}</p>
-            <h4>Duration: {{ w.duration }}</h4>
-            <p>Reference : {{ w.reference.name }}</p>
-            <h4>Contact: {{ w.reference.number }}</h4>
+        <div class="experience">
+          <h4>WORK EXPERIENCE</h4>
+          <hr
+            color="#375460"
+            size="2px;"
+            style="margin-top: 3px; margin-left: 26px; margin-right: 26px"
+          />
+          <div class="tag1">
+            2022
+            <div class="tagtri1"></div>
+          </div>
+          <div class="tag2">
+            2021
+            <div class="tagtri2"></div>
+          </div>
+          <div class="tag3">
+            2020
+            <div class="tagtri3"></div>
+          </div>
+
+          <div class="verline">
+            <div class="spot"></div>
+            <div class="spot2"></div>
+            <div class="spot3"></div>
+            <!-- <div class="spot4"></div> -->
+          </div>
+          <div class="exitem">
+            <div class="it" v-for="w of work" :key="w.name">
+              <h4>{{ w.name }}</h4>
+              <p>{{ w.title }}</p>
+              <h4>Duration: {{ w.duration }}</h4>
+              <p>Reference : {{ w.reference.name }}</p>
+              <h4>Contact: {{ w.reference.number }}</h4>
+            </div>
           </div>
         </div>
       </div>
@@ -160,11 +165,9 @@ export default {
 <style scoped>
 h1 {
   font-family: Rampart One;
-  color: white;
+  color: black;
 }
-app {
-  background-color: #333;
-}
+
 * {
   position: relative;
 }
@@ -176,29 +179,39 @@ body {
   padding: 0px;
   overflow-x: hidden;
 }
-
+.intro {
+  box-shadow: 5px 5px 5px 5px black;
+  width: 570px;
+  border-radius: 10px;
+}
+.container {
+  width: 100vh;
+}
 .resume {
-  width: 862px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 60px;
-  box-shadow: 10px 15px 15px -10px whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
-
-.left,
-.right {
-  display: inline-block;
-  box-sizing: border-box;
-}
-
 .left {
-  width: 306px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 5px 5px black;
+  border-radius: 10px;
+  width: 570px;
+  margin-top: 10px;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 5px 5px black;
+  margin-bottom: 50px;
+  border-radius: 10px;
 }
 
-.lefttop {
-  width: 400px;
-  height: 400px;
-}
 .lefttop img {
   object-fit: cover;
   height: 522px;
@@ -210,10 +223,11 @@ body {
 .leftbottom {
   width: 306px;
   height: 758px;
-  background-color: #333;
+  background-color: white;
   font-family: HelveticaNeue-Condensed;
-  color: #fff;
+  color: black;
   text-align: center;
+  border-radius: 10px;
 }
 
 .leftbottom h3 {
@@ -358,11 +372,11 @@ body {
 
 .right {
   width: 556px;
-  background-color: #333;
+  background-color: white;
 }
 
 .right h4 {
-  color: white;
+  color: black;
   width: 240px;
   left: 28px;
   text-align: left;
@@ -375,14 +389,12 @@ body {
   width: 495px;
   left: 28px;
   letter-spacing: 0.2px;
-  color: white;
+  color: black;
 }
 .ability {
-  width: 495px;
-  box-sizing: border-box;
-  left: 28px;
-  margin-top: 2px;
-  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .circle1,
@@ -393,7 +405,7 @@ body {
   height: 120px;
   margin-left: 33.15px;
   border-radius: 100%;
-  background-color: white;
+  background-color: black;
   overflow: hidden;
 }
 
@@ -509,7 +521,7 @@ body {
   margin-inline: 8%;
 }
 .experience h4 {
-  color: white;
+  color: black;
   width: 300px;
   left: 28px;
   text-align: left;
@@ -527,7 +539,7 @@ body {
   text-align: left;
   font-size: 18px;
   line-height: 34px;
-  color: #fff;
+  color: white;
   letter-spacing: 4px;
 }
 
@@ -553,7 +565,7 @@ body {
   font-size: 18px;
   font-weight: 80;
   line-height: 34px;
-  color: #fff;
+  color: black;
   letter-spacing: 4px;
 }
 
@@ -579,7 +591,7 @@ body {
   font-size: 18px;
   font-weight: 80;
   line-height: 34px;
-  color: #fff;
+  color: black;
   letter-spacing: 4px;
 }
 
@@ -605,7 +617,7 @@ body {
   font-size: 18px;
   font-weight: 80;
   line-height: 34px;
-  color: #fff;
+  color: black;
   letter-spacing: 4px;
 }
 
@@ -622,7 +634,7 @@ body {
 
 .verline {
   width: 1px;
-  height: 490px;
+  height: 300px;
   background-color: #375460;
   position: absolute;
   left: 165px;
@@ -907,6 +919,17 @@ body {
 }
 /* media queries */
 
+@media (min-width: 700px) and (max-width: 850px) {
+  .profile p {
+    font-size: 16px;
+  }
+  .ability {
+    display: none;
+  }
+  h4 {
+    display: flex;
+  }
+}
 @media (min-width: 300px) and (max-width: 850px) {
   .profile p {
     font-size: 16px;
