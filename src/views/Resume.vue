@@ -22,7 +22,7 @@
           <p>Moblie :084 582 8653</p>
           <p style="letter-spacing: 0.2px">Email: lawrencesunethia@gmail.com</p>
         </div>
-        <h4 class="ed">EDUCATION</h4>
+        <h4 class="ed">EDUCATION:</h4>
         <div class="institute">
           <p>
             >High School : D.F Malan High School<br />
