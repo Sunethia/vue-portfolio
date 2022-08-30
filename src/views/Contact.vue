@@ -28,11 +28,11 @@
       <button
         type="submit"
         style="
-          background-color: #333;
+          background-color: white;
           border: none;
           font-size: 5rem;
           font-family: 'Rampart One';
-          color: white;
+          color: black;
         "
       >
         Send
@@ -47,12 +47,12 @@ export default {};
 .contact {
   width: 100vw;
   height: 100vh;
-  background-color: #333;
+  background-color: white;
 }
 h1 {
   font-size: 5rem;
   font-family: "Rampart One";
-  color: white;
+  color: black;
   padding-bottom: 3rem;
   padding-top: 3rem;
 }
@@ -72,12 +72,12 @@ form {
 textarea {
   width: 30rem;
   height: 2rem;
-  background-color: #333;
+  background-color: white;
 }
 input {
   width: 30em;
   height: 2rem;
-  background-color: #333;
+  background-color: white;
 }
 
 @media (min-width: 300px) and (max-width: 520px) {

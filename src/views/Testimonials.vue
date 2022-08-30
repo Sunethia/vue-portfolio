@@ -61,15 +61,15 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  background-color: #333;
+  background-color: white;
   flex-wrap: wrap;
 }
 h1 {
-  background-color: #333;
+  background-color: white;
   font-family: "Rampart One";
   font-size: 5rem;
   padding-top: 1rem;
-  color: white;
+  color: black;
   padding-left: 10rem;
   padding-right: 6rem;
 }

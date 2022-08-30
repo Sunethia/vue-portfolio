@@ -1519,7 +1519,7 @@ export default {
 .home {
   width: 100vw;
   height: 100vh;
-  background-color: #333;
+  background-color: white;
 
   display: flex;
   flex-direction: column;
@@ -1527,12 +1527,12 @@ export default {
   align-items: center;
 }
 h1 {
-  color: white;
+  color: black;
   font-family: "Rampart One";
   font-size: 5rem;
 }
 h2 {
-  color: white;
+  color: black;
   font-family: "Rampart One";
   font-size: 3rem;
 }
@@ -1615,7 +1615,7 @@ svg {
   }
 }
 /* media queries */
-@media (min-width: 300px) and (max-width: 430px) {
+@media (min-width: 460px) and (max-width: 661px) {
   .home h1 {
     font-size: 4rem;
   }
@@ -1623,12 +1623,20 @@ svg {
     font-size: 2rem;
   }
 }
-@media (min-width: 300px) and (max-width: 355px) {
+@media (min-width: 400px) and (max-width: 460px) {
   .home h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .home h2 {
     font-size: 1.5rem;
+  }
+}
+@media (min-width: 300px) and (max-width: 400px) {
+  .home h1 {
+    font-size: 1.5rem;
+  }
+  .home h2 {
+    font-size: 1rem;
   }
 }
 </style>

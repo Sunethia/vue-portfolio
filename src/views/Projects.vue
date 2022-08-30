@@ -70,7 +70,7 @@ export default {
 </script>
 <style>
 .projects {
-  background-color: #333;
+  background-color: white;
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
@@ -81,7 +81,7 @@ export default {
 h1 {
   margin-top: 5rem;
   margin-bottom: 3rem;
-  color: white;
+  color: black;
   font-family: "Rampart One";
   font-size: 5rem;
 }
@@ -102,7 +102,7 @@ h1 {
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  background-color: #333;
+  background-color: white;
   box-shadow: 5px 5px 5px 5px cornflowerblue;
   padding: 10px;
 }
@@ -117,19 +117,19 @@ h1 {
   flex-direction: row;
   align-items: center;
   gap: 3rem;
-  background-color: #333;
+  background-color: white;
 }
 .title {
-  background-color: #333;
+  background-color: white;
 }
 div#app {
-  background-color: #333;
+  background-color: white;
 }
 h5.card-title {
-  color: white;
+  color: black;
 }
 p.card-text {
-  color: white;
+  color: black;
 }
 @media (min-width: 300px) and (max-width: 375px) {
   h1 {
