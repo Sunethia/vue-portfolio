@@ -66,6 +66,7 @@
 #menuToggle a {
   text-decoration: none;
   color: #ffffff;
+  
   transition: color 0.3s ease;
 }
 #menuToggle a:hover {
